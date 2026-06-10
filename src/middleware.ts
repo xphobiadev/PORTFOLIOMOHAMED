@@ -2,16 +2,19 @@ import { NextResponse } from 'next/server';
 import { NextRequest } from 'next/server';
 import { i18n, Locale } from './types/i18n';
 
-const AUTH_TOKEN = process.env.ADMIN_AUTH_TOKEN;
+function env(name: string) {
+    return process.env[name];
+}
 
 export function middleware(request: NextRequest) {
     const { pathname } = request.nextUrl;
 
     // 1. Dashboard Authentication
     if (pathname.startsWith('/dashboard')) {
+        const authToken = env('ADMIN_AUTH_TOKEN');
         const token = request.cookies.get('mb_auth_token')?.value;
 
-        if (!AUTH_TOKEN || !token || token !== AUTH_TOKEN) {
+        if (!authToken || !token || token !== authToken) {
             // Redirect to login if unauthorized
             return NextResponse.redirect(new URL('/login', request.url));
         }

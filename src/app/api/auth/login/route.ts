@@ -1,12 +1,16 @@
 import { NextResponse } from "next/server";
 
-const AUTH_TOKEN = process.env.ADMIN_AUTH_TOKEN;
-const ADMIN_USERNAME = process.env.ADMIN_USERNAME;
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
+function env(name: string) {
+    return process.env[name];
+}
 
 export async function POST(request: Request) {
     try {
-        if (!AUTH_TOKEN || !ADMIN_USERNAME || !ADMIN_PASSWORD) {
+        const authToken = env("ADMIN_AUTH_TOKEN");
+        const adminUsername = env("ADMIN_USERNAME");
+        const adminPassword = env("ADMIN_PASSWORD");
+
+        if (!authToken || !adminUsername || !adminPassword) {
             return NextResponse.json({ error: "Authentication is not configured" }, { status: 500 });
         }
 
@@ -14,13 +18,13 @@ export async function POST(request: Request) {
         const username = body.username?.trim();
         const password = body.password?.trim();
 
-        if (username === ADMIN_USERNAME && password === ADMIN_PASSWORD) {
+        if (username === adminUsername && password === adminPassword) {
             const response = NextResponse.json({ success: true });
             
             // Set secure HttpOnly cookie
             response.cookies.set({
                 name: 'mb_auth_token',
-                value: AUTH_TOKEN,
+                value: authToken,
                 httpOnly: true,
                 secure: process.env.NODE_ENV === 'production',
                 sameSite: 'lax',
