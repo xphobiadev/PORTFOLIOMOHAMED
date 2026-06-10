@@ -1,0 +1,35 @@
+# dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# production
+build/
+dist/
+
+# local env files
+.env
+.env*.local
+
+# local tool/browser artifacts
+.uploads/
+
+# Supabase local state
+supabase/.temp/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# editor/system files
+.vscode/
+.DS_Store
+Thumbs.db

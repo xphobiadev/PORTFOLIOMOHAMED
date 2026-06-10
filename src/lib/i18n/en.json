@@ -1,0 +1,141 @@
+{
+    "header": {
+        "home": "HOME",
+        "works": "MY WORKS",
+        "about": "ABOUT ME",
+        "contact": "CONTACT"
+    },
+    "footer": {
+        "blurb": "A multidisciplinary creative turning ideas into exceptional experiences.",
+        "navTitle": "NAVIGATION",
+        "home": "Home",
+        "works": "My works",
+        "about": "About",
+        "contact": "Contact",
+        "resourcesTitle": "RESOURCES",
+        "blog": "Blog",
+        "faq": "FAQ",
+        "press": "Press",
+        "accountTitle": "ACCOUNT",
+        "dashboard": "Dashboard",
+        "login": "Sign in",
+        "signup": "Sign up"
+    },
+    "home": {
+        "hero": {
+            "title_1": "CRAFTING",
+            "title_2": "CREATIVE",
+            "title_3": "VISIONS",
+            "subtitle": "A multidisciplinary creative visionary bringing unique experiences to life.",
+            "cta_primary_label": "Start a project",
+            "cta_secondary_label": "View all works"
+        },
+        "stats": {
+            "director": "DIRECTOR",
+            "basedIn": "BASED IN",
+            "morocco": "MOROCCO"
+        },
+        "services": {
+            "section_label": "WHAT I DO",
+            "section_title": "LET'S WORK TOGETHER",
+            "section_subtitle": "I turn your ideas into reality"
+        },
+        "cta": {
+            "title_1": "LET'S CREATE",
+            "title_2": "SOMETHING",
+            "title_3": "EXTRAORDINARY",
+            "cta_label": "Start a project"
+        },
+        "featured": {
+            "selectedWorks": "SELECTED WORKS",
+            "featuredProjects": "FEATURED PROJECTS",
+            "noFeaturedProjects": "No featured projects selected yet"
+        }
+    },
+    "works": {
+        "hero": {
+            "label": "PORTFOLIO",
+            "title": "MY WORKS",
+            "subtitle": "Discover a selection of my work."
+        },
+        "gallery": {
+            "categories": "Categories",
+            "showMore": "SHOW MORE",
+            "discoverMore": "DISCOVER MORE",
+            "noProjects": "No projects found for this category."
+        },
+        "detail": {
+            "back": "BACK TO WORKS",
+            "client": "Client",
+            "location": "Location",
+            "date": "Date",
+            "category": "Category",
+            "gallery": "Gallery",
+            "visitProject": "Visit Project"
+        }
+    },
+    "about": {
+        "timeline": {
+            "title1": "Journey",
+            "title2": "My story",
+            "kicker": "CREATIVITY SINCE CHILDHOOD",
+            "milestoneBadge": "Milestone",
+            "endYear": "2026",
+            "endSubtitle": "The journey continues"
+        },
+        "specializations": {
+            "titleLine1": "Specializations",
+            "titleGold": "Across disciplines",
+            "intro": "Versatile mastery of tools and creative disciplines, designing end-to-end experiences from A to Z."
+        },
+        "education": {
+            "titleBefore": "Academic ",
+            "titleGold": "path",
+            "intro": "Continuous learning with the world's most prestigious institutions and platforms."
+        },
+        "testimonials": {
+            "line1": "Professional",
+            "line2": "recognition"
+        },
+        "hero": {
+            "title_1": "MOHAMED",
+            "title_2": "BOULIANI",
+            "subtitle": "Creative Director",
+            "tagline": "Creating unique experiences.",
+            "badge_text": "20+ yrs",
+            "cta_text": "Discover"
+        }
+    },
+    "contact": {
+        "kicker": "CONTACT",
+        "titleBefore": "A PROJECT IN ",
+        "titleHighlight": "MIND?",
+        "desc": "Let's collaborate and build unforgettable experiences together.",
+        "name": "NAME",
+        "namePh": "Your name",
+        "email": "EMAIL",
+        "emailPh": "email@site.com",
+        "subject": "SUBJECT",
+        "subjectPh": "Subject",
+        "message": "MESSAGE",
+        "messagePh": "Tell me about your project...",
+        "send": "SEND",
+        "sending": "Sending...",
+        "emailLabel": "EMAIL",
+        "locationTitle": "LOCATION",
+        "locationValue": "Casablanca, Morocco",
+        "availabilityTitle": "AVAILABILITY",
+        "availabilityText": "Available for freelance projects and collaborations.",
+        "toastOk": "Message sent.",
+        "toastErr": "Could not send message."
+    },
+    "common": {
+        "viewProjects": "View Projects",
+        "startProject": "Start a project",
+        "expertise": "EXPERTISE",
+        "creative": "Creative",
+        "servicesWeOffer": "Services we offer",
+        "learnMore": "LEARN MORE",
+        "seeAll": "SEE ALL"
+    }
+}

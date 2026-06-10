@@ -1,0 +1,141 @@
+{
+    "header": {
+        "home": "ACCUEIL",
+        "works": "RÉALISATIONS",
+        "about": "À PROPOS",
+        "contact": "CONTACT"
+    },
+    "footer": {
+        "blurb": "Un créatif multidisciplinaire transformant les idées en expériences exceptionnelles.",
+        "navTitle": "NAVIGATION",
+        "home": "Accueil",
+        "works": "Réalisations",
+        "about": "À propos",
+        "contact": "Contact",
+        "resourcesTitle": "RESSOURCES",
+        "blog": "Blog",
+        "faq": "FAQ",
+        "press": "Presse",
+        "accountTitle": "COMPTE",
+        "dashboard": "Tableau de bord",
+        "login": "Connexion",
+        "signup": "Inscription"
+    },
+    "home": {
+        "hero": {
+            "title_1": "CRÉER",
+            "title_2": "DES VISIONS",
+            "title_3": "CRÉATIVES",
+            "subtitle": "Un créatif multidisciplinaire qui donne vie à des expériences uniques.",
+            "cta_primary_label": "Démarrer un projet",
+            "cta_secondary_label": "Voir tous les projets"
+        },
+        "stats": {
+            "director": "RÉALISATEUR",
+            "basedIn": "BASÉ AU",
+            "morocco": "MAROC"
+        },
+        "services": {
+            "section_label": "CE QUE JE FAIS",
+            "section_title": "TRAVAILLONS ENSEMBLE",
+            "section_subtitle": "Je transforme vos idées"
+        },
+        "cta": {
+            "title_1": "CRÉONS",
+            "title_2": "QUELQUE CHOSE",
+            "title_3": "D'EXTRAORDINAIRE",
+            "cta_label": "Démarrer un projet"
+        },
+        "featured": {
+            "selectedWorks": "TRAVAUX SÉLECTIONNÉS",
+            "featuredProjects": "PROJETS VEDETTES",
+            "noFeaturedProjects": "Aucun projet vedette sélectionné pour le moment"
+        }
+    },
+    "works": {
+        "hero": {
+            "label": "PORTFOLIO",
+            "title": "MES PROJETS",
+            "subtitle": "Découvrez un aperçu de mes réalisations."
+        },
+        "gallery": {
+            "categories": "Catégories",
+            "showMore": "VOIR PLUS",
+            "discoverMore": "DÉCOUVRIR PLUS",
+            "noProjects": "Aucun projet trouvé pour cette catégorie."
+        },
+        "detail": {
+            "back": "RETOUR AUX RÉALISATIONS",
+            "client": "Client",
+            "location": "Lieu",
+            "date": "Date",
+            "category": "Catégorie",
+            "gallery": "Galerie",
+            "visitProject": "Voir le projet"
+        }
+    },
+    "about": {
+        "timeline": {
+            "title1": "Parcours",
+            "title2": "Mon Histoire",
+            "kicker": "CRÉATIVITÉ DEPUIS L'ENFANCE",
+            "milestoneBadge": "Étape clé",
+            "endYear": "2026",
+            "endSubtitle": "L'aventure continue"
+        },
+        "specializations": {
+            "titleLine1": "Spécialisations",
+            "titleGold": "Multiples",
+            "intro": "Une maîtrise polyvalente d'outils et de disciplines créatives, permettant de concevoir des expériences complètes de A à Z."
+        },
+        "education": {
+            "titleBefore": "Parcours ",
+            "titleGold": "Académique",
+            "intro": "Un apprentissage continu auprès des institutions et plateformes les plus prestigieuses."
+        },
+        "testimonials": {
+            "line1": "Reconnaissance",
+            "line2": "Professionnelle"
+        },
+        "hero": {
+            "title_1": "MOHAMED",
+            "title_2": "BOULIANI",
+            "subtitle": "Directeur créatif",
+            "tagline": "Créer des expériences uniques.",
+            "badge_text": "20+ ans",
+            "cta_text": "Découvrir"
+        }
+    },
+    "contact": {
+        "kicker": "CONTACT",
+        "titleBefore": "UN PROJET EN ",
+        "titleHighlight": "TÊTE ?",
+        "desc": "Collaborons et créons ensemble des expériences inoubliables.",
+        "name": "NOM",
+        "namePh": "Votre nom",
+        "email": "EMAIL",
+        "emailPh": "email@site.com",
+        "subject": "SUJET",
+        "subjectPh": "Sujet",
+        "message": "MESSAGE",
+        "messagePh": "Parle-moi de ton projet...",
+        "send": "ENVOYER",
+        "sending": "Envoi...",
+        "emailLabel": "EMAIL",
+        "locationTitle": "LOCALISATION",
+        "locationValue": "Casablanca, Maroc",
+        "availabilityTitle": "DISPONIBILITÉ",
+        "availabilityText": "Disponible pour projets freelance et collaborations.",
+        "toastOk": "Message envoyé.",
+        "toastErr": "Envoi impossible."
+    },
+    "common": {
+        "viewProjects": "Voir les projets",
+        "startProject": "Démarrer un projet",
+        "expertise": "EXPERTISE",
+        "creative": "Créatif",
+        "servicesWeOffer": "Services proposés",
+        "learnMore": "EN SAVOIR PLUS",
+        "seeAll": "VOIR TOUT"
+    }
+}
