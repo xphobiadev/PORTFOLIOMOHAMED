@@ -25,28 +25,28 @@ export function AboutEducationSection({ education, aboutUi }: AboutEducationSect
     };
 
     return (
-        <section className="relative z-10 bg-[#070707] py-24 lg:py-40">
+        <section className="relative z-10 bg-[#070707] py-20 sm:py-24 lg:py-40">
             <div className="container-site min-w-0">
-                <div className="mb-24 text-center">
+                <div className="mb-16 text-center sm:mb-24">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="mb-8 flex items-center justify-center gap-4"
+                        className="mb-8 flex max-w-full items-center justify-center gap-3 sm:gap-4"
                     >
-                        <span className="h-[1px] w-12 bg-mb-gold/60" />
-                        <span className="text-[10px] font-bold uppercase tracking-[0.5em] text-mb-gold">
+                        <span className="h-[1px] w-8 shrink-0 bg-mb-gold/60 sm:w-12" />
+                        <span className="min-w-0 break-words text-[10px] font-bold uppercase tracking-[0.22em] text-mb-gold sm:tracking-[0.5em]">
                             {aboutUi.eduTitleBefore}
                         </span>
-                        <span className="h-[1px] w-12 bg-mb-gold/60" />
+                        <span className="h-[1px] w-8 shrink-0 bg-mb-gold/60 sm:w-12" />
                     </motion.div>
-                    <h2 className="font-display text-5xl font-bold uppercase tracking-[-0.04em] sm:text-7xl md:text-8xl text-white">
+                    <h2 className="max-w-full break-words font-display text-4xl font-bold uppercase tracking-normal text-white sm:text-7xl md:text-8xl">
                         <span className="gold-text-shimmer italic">{aboutUi.eduTitleGold}</span>
                     </h2>
-                    <p className="mx-auto mt-10 max-w-2xl font-light text-white/40 text-xl leading-relaxed">{aboutUi.eduIntro}</p>
+                    <p className="mx-auto mt-8 max-w-2xl text-base font-light leading-relaxed text-white/40 sm:mt-10 sm:text-xl">{aboutUi.eduIntro}</p>
                 </div>
 
-                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
                     {education.map((edu, index) => (
                         <motion.div
                             key={edu.id || index}
@@ -54,16 +54,16 @@ export function AboutEducationSection({ education, aboutUi }: AboutEducationSect
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, amount: 0.15 }}
                             transition={{ duration: 0.6, delay: (index % 3) * 0.1, ease: [0.16, 1, 0.3, 1] }}
-                            className="group flex items-center gap-8 rounded-[32px] border border-white/5 bg-white/[0.01] p-8 backdrop-blur-3xl transition-all duration-700 hover:border-mb-gold/30 hover:bg-white/[0.03] hover:shadow-[0_0_50px_rgba(200,162,74,0.05)]"
+                            className="group flex min-w-0 items-start gap-5 rounded-[24px] border border-white/5 bg-white/[0.01] p-5 backdrop-blur-3xl transition-all duration-700 hover:border-mb-gold/30 hover:bg-white/[0.03] hover:shadow-[0_0_50px_rgba(200,162,74,0.05)] sm:items-center sm:gap-8 sm:rounded-[32px] sm:p-8"
                         >
                             <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-[20px] bg-white/5 border border-white/5 transition-all duration-700 group-hover:border-mb-gold/40 group-hover:bg-mb-gold/10 group-hover:scale-110">
                                 {getIcon(edu.type)}
                             </div>
 
                             <div className="min-w-0 flex-1">
-                                <h4 className="w-full truncate font-display text-xl font-bold uppercase tracking-tight text-white group-hover:text-mb-gold transition-colors duration-500">{edu.institution}</h4>
-                                <p className="mb-3 w-full truncate text-sm font-light text-white/40 group-hover:text-white/60 transition-colors duration-500">{edu.title}</p>
-                                <div className="font-mono text-[9px] font-bold uppercase tracking-[0.3em] text-mb-gold/60">
+                                <h4 className="w-full break-words font-display text-lg font-bold uppercase tracking-normal text-white transition-colors duration-500 group-hover:text-mb-gold sm:text-xl">{edu.institution}</h4>
+                                <p className="mb-3 w-full break-words text-sm font-light text-white/40 transition-colors duration-500 group-hover:text-white/60">{edu.title}</p>
+                                <div className="break-words font-mono text-[9px] font-bold uppercase tracking-[0.18em] text-mb-gold/60 sm:tracking-[0.3em]">
                                     {edu.year_start} {edu.year_end ? `— ${edu.year_end}` : ""}
                                 </div>
                             </div>

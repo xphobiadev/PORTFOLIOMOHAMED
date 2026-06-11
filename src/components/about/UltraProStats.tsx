@@ -58,12 +58,12 @@ function StatCounter({ stat, start, index }: { stat: LocalizedStatV3; start: boo
     }, [start, hasAnimated, stat.value, index]);
 
     return (
-        <div className="group relative flex min-w-0 flex-col items-center justify-center p-8 transition-all duration-500 hover:bg-white/[0.03] lg:p-12">
-            <div className="relative font-display text-4xl font-bold tabular-nums tracking-tighter text-white transition-all duration-500 group-hover:text-mb-gold group-hover:scale-110 sm:text-5xl lg:text-6xl">
+        <div className="group relative flex min-w-0 flex-col items-center justify-center p-5 transition-all duration-500 hover:bg-white/[0.03] sm:p-8 lg:p-12">
+            <div className="relative font-display text-3xl font-bold tabular-nums tracking-normal text-white transition-all duration-500 group-hover:text-mb-gold group-hover:scale-110 sm:text-5xl lg:text-6xl">
                 <span ref={valueRef}>0</span>
                 <span className="gold-text-shimmer ml-1">{stat.suffix}</span>
             </div>
-            <p className="mt-4 text-center text-[10px] font-bold uppercase tracking-[0.3em] text-white/30 transition-colors duration-500 group-hover:text-white/60">
+            <p className="mt-3 max-w-full break-words text-center text-[9px] font-bold uppercase tracking-[0.18em] text-white/30 transition-colors duration-500 group-hover:text-white/60 sm:mt-4 sm:text-[10px] sm:tracking-[0.3em]">
                 {stat.label}
             </p>
         </div>

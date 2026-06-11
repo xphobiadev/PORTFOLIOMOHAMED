@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useTextScramble } from "@/hooks/useTextScramble";
-import { ArrowUpRight, BadgeCheck } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import type { LocalizedAboutHero } from "@/lib/i18n/about-page-data";
 
 interface UltraProHeroProps {
@@ -30,7 +30,7 @@ export function UltraProHero({ data }: UltraProHeroProps) {
     return (
         <section
             ref={containerRef}
-            className="relative flex min-h-screen w-full items-center overflow-hidden border-b border-white/8 pb-20 pt-32"
+            className="relative flex min-h-screen w-full items-center overflow-hidden border-b border-white/8 pb-16 pt-28 sm:pb-20 sm:pt-32"
         >
             {data.portrait_url && (
                 <motion.img
@@ -46,25 +46,25 @@ export function UltraProHero({ data }: UltraProHeroProps) {
             <div className="absolute top-1/2 left-0 w-full h-[1px] bg-mb-gold/20 blur-[120px] pointer-events-none" />
             <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:100%_4px] opacity-20 pointer-events-none" />
 
-            <div className="pointer-events-none absolute bottom-0 left-0 right-0 translate-y-1/3 overflow-hidden text-center opacity-[0.02]">
-                <span className="font-display text-[25vw] font-bold uppercase leading-none select-none">VISIONARY</span>
+            <div className="pointer-events-none absolute bottom-0 left-0 right-0 hidden translate-y-1/3 overflow-hidden text-center opacity-[0.02] sm:block">
+                <span className="select-none font-display text-8xl font-bold uppercase leading-none md:text-9xl lg:text-[12rem]">VISIONARY</span>
             </div>
 
-            <div className="container-site relative z-10 grid min-w-0 gap-20 lg:grid-cols-[1fr_480px] lg:items-center">
+            <div className="container-site relative z-10 grid min-w-0 gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(320px,480px)] lg:items-center lg:gap-20">
                 <div className="z-10 flex min-w-0 flex-col items-start">
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
-                        className="mb-10 flex items-center gap-4"
+                        className="mb-8 flex max-w-full items-center gap-3 sm:mb-10 sm:gap-4"
                     >
-                        <span className="h-[1px] w-12 bg-mb-gold/60" />
-                        <span className="text-[10px] font-bold uppercase tracking-[0.5em] text-mb-gold">
+                        <span className="h-[1px] w-8 shrink-0 bg-mb-gold/60 sm:w-12" />
+                        <span className="min-w-0 break-words text-[10px] font-bold uppercase tracking-[0.24em] text-mb-gold sm:tracking-[0.5em]">
                             {data.badge_text}
                         </span>
                     </motion.div>
 
-                    <h1 className="break-words font-display text-[clamp(4rem,14vw,12rem)] font-bold uppercase leading-[0.8] tracking-[-0.04em] mb-12">
+                    <h1 className="mb-8 max-w-full break-words font-display text-5xl font-bold uppercase leading-[0.9] tracking-normal min-[380px]:text-6xl sm:mb-12 sm:text-8xl lg:text-9xl xl:text-[10rem]">
                         <motion.span
                             initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -83,12 +83,12 @@ export function UltraProHero({ data }: UltraProHeroProps) {
                         </motion.span>
                     </h1>
 
-                    <div className="max-w-2xl border-l border-white/10 pl-8">
+                    <div className="max-w-2xl border-l border-white/10 pl-5 sm:pl-8">
                         <motion.p
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 1, delay: 0.8 }}
-                            className="text-xl md:text-2xl font-light leading-relaxed text-white/50"
+                            className="text-base font-light leading-relaxed text-white/50 sm:text-xl md:text-2xl"
                         >
                             {data.subtitle}
                         </motion.p>
@@ -98,7 +98,7 @@ export function UltraProHero({ data }: UltraProHeroProps) {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, delay: 1 }}
-                        className="mt-8 min-h-6 font-mono text-[10px] uppercase tracking-[0.4em] text-mb-gold/40"
+                        className="mt-8 min-h-6 max-w-full break-words font-mono text-[10px] uppercase tracking-[0.18em] text-mb-gold/40 sm:tracking-[0.4em]"
                     >
                         {displayText}
                     </motion.div>
@@ -108,9 +108,9 @@ export function UltraProHero({ data }: UltraProHeroProps) {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 1.2 }}
-                        className="group relative mt-16 inline-flex items-center gap-8 px-12 py-6 rounded-full border border-mb-gold/30 bg-mb-gold/5 text-[11px] font-bold uppercase tracking-[0.5em] text-mb-gold transition-all duration-500 hover:bg-mb-gold hover:text-black hover:scale-110"
+                        className="group relative mt-10 inline-flex max-w-full items-center gap-4 rounded-full border border-mb-gold/30 bg-mb-gold/5 px-6 py-4 text-[10px] font-bold uppercase tracking-[0.24em] text-mb-gold transition-all duration-500 hover:bg-mb-gold hover:text-black sm:mt-16 sm:gap-8 sm:px-12 sm:py-6 sm:text-[11px] sm:tracking-[0.5em] sm:hover:scale-110"
                     >
-                        {data.cta_text}
+                        <span className="min-w-0 break-words">{data.cta_text}</span>
                         <ArrowUpRight size={16} className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                     </motion.a>
                 </div>
@@ -119,12 +119,12 @@ export function UltraProHero({ data }: UltraProHeroProps) {
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1.8, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                    className="group relative mx-auto aspect-[3/4] w-full"
+                    className="group relative mx-auto aspect-[3/4] w-full max-w-[320px] sm:max-w-[420px] lg:max-w-none"
                 >
                     {/* Portrait Frame Elements */}
                     <div className="absolute -inset-8 bg-mb-gold/5 opacity-0 blur-[100px] transition-opacity duration-1000 group-hover:opacity-100 pointer-events-none" />
-                    <div className="absolute -left-10 top-1/2 -translate-y-1/2 h-40 w-[1px] bg-gradient-to-b from-transparent via-mb-gold/40 to-transparent" />
-                    <div className="absolute -right-10 top-1/2 -translate-y-1/2 h-40 w-[1px] bg-gradient-to-b from-transparent via-mb-gold/40 to-transparent" />
+                    <div className="absolute -left-10 top-1/2 hidden h-40 w-[1px] -translate-y-1/2 bg-gradient-to-b from-transparent via-mb-gold/40 to-transparent sm:block" />
+                    <div className="absolute -right-10 top-1/2 hidden h-40 w-[1px] -translate-y-1/2 bg-gradient-to-b from-transparent via-mb-gold/40 to-transparent sm:block" />
                     
                     {/* Tech Meta Overlays */}
                     <div className="absolute -top-6 -right-6 z-20 opacity-0 group-hover:opacity-100 transition-all duration-700 translate-y-4 group-hover:translate-y-0">
@@ -134,7 +134,7 @@ export function UltraProHero({ data }: UltraProHeroProps) {
                         </div>
                     </div>
 
-                    <div className="relative h-full w-full overflow-hidden rounded-[40px] border border-white/10 bg-[#0a0a0a] shadow-2xl transition-all duration-700 group-hover:border-mb-gold/35 group-hover:shadow-[0_0_100px_rgba(200,162,74,0.1)]">
+                    <div className="relative h-full w-full overflow-hidden rounded-[28px] border border-white/10 bg-[#0a0a0a] shadow-2xl transition-all duration-700 group-hover:border-mb-gold/35 group-hover:shadow-[0_0_100px_rgba(200,162,74,0.1)] sm:rounded-[40px]">
                         {data.portrait_url ? (
                             <img
                                 src={data.portrait_url}

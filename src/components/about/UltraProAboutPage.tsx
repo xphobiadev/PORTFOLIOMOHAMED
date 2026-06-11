@@ -11,6 +11,7 @@ import { AboutEducationSection } from "./AboutEducationSection";
 import { AboutTestimonialsSection } from "./AboutTestimonialsSection";
 import { Header } from "../site/header";
 import { Footer } from "../site/footer";
+import { WhatsAppButton } from "../site/whatsapp-button";
 import type { Locale } from "@/types/i18n";
 import type { AboutUiCopy } from "@/lib/i18n/about-ui";
 import type {
@@ -47,7 +48,7 @@ export function UltraProAboutPage({
         <main
             dir="ltr"
             lang={locale}
-            className="relative bg-[#070707] text-white selection:bg-mb-gold/30 selection:text-white"
+            className="relative overflow-x-hidden bg-[#070707] text-white selection:bg-mb-gold/30 selection:text-white"
         >
             <GoldenDustBackground />
             <FilmGrain />
@@ -63,6 +64,7 @@ export function UltraProAboutPage({
                 <AboutTestimonialsSection testimonials={testimonials} aboutUi={aboutUi} />
             </div>
 
+            <WhatsAppButton />
             <Footer />
         </main>
     );

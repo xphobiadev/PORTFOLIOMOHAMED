@@ -15,7 +15,7 @@ export function Footer() {
         <footer className="relative overflow-hidden bg-black pt-32 pb-12 border-t border-white/5">
             {/* Background Aesthetic */}
             <div className="pointer-events-none absolute inset-0 z-0 opacity-20">
-                <div className="absolute left-1/2 top-0 h-[500px] w-[1000px] -translate-x-1/2 rounded-full bg-mb-gold/10 blur-[120px]" />
+                <div className="absolute left-1/2 top-0 h-[420px] w-full max-w-[1000px] -translate-x-1/2 rounded-full bg-mb-gold/10 blur-[100px] sm:h-[500px] sm:blur-[120px]" />
             </div>
 
             <div className="container-site relative z-10">
@@ -103,8 +103,8 @@ export function Footer() {
             </div>
             
             {/* Massive Background Text Aesthetic */}
-            <div className="pointer-events-none absolute -bottom-16 left-0 right-0 overflow-hidden text-center opacity-[0.02] select-none">
-                <span className="font-display text-[25vw] font-bold leading-none tracking-tighter whitespace-nowrap">CREATIVE</span>
+            <div className="pointer-events-none absolute -bottom-16 left-0 right-0 hidden overflow-hidden text-center opacity-[0.02] select-none sm:block">
+                <span className="whitespace-nowrap font-display text-8xl font-bold leading-none tracking-normal md:text-9xl lg:text-[12rem]">CREATIVE</span>
             </div>
         </footer>
     );
